@@ -16,7 +16,6 @@ h1 {
 }
 
 .title {
-  font-size: 40px;
   text-align: center;
   background-color: transparent;
   color: #ffff;
@@ -26,13 +25,16 @@ h1 {
 
 .img {
   text-align: center;
+  width: auto;
+  height: 150px;
 }
 
 .recipes a {
   text-decoration: none;
   font-size: 20px;
   color: #ffff;
-  -webkit-text-stroke: .5px #000;
+  -webkit-text-stroke: 1px #000;
+  font-weight: 700;
 
 }
 
@@ -40,6 +42,8 @@ h1 {
   text-align: center;
   list-style: none;
 }
+
+
 
 /*Eggplant soup*/
 
@@ -69,4 +73,10 @@ h1 {
 
 .oat {
   background-color: #cc8800;
+}
+
+
+.all-img {
+  width: auto;
+  height: 400px;
 }
