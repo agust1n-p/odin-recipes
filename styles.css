@@ -6,7 +6,11 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: #565758;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
@@ -18,11 +22,6 @@ h1 {
   -webkit-text-stroke: 2px #000;
 }
 
-.header {
-  background-color: #2d3033;
-  display: flex;
-  justify-content: center;
-}
 
 .header h1 {
   text-align: center;
@@ -30,56 +29,64 @@ h1 {
   color: rgb(129, 31, 31);
   font-weight: bold;
   -webkit-text-stroke: 2px #000;
+  background-color: rgb(117, 57, 9);
 }
 
+
+ul {
+  list-style: none;
+  padding: 16px;
+}
 
 li {
-  list-style: none;
+  padding: 16px;
 }
 
-ul a {
+a {
   text-decoration: none;
   font-size: 20px;
   color: #ffff;
   -webkit-text-stroke: 1px #000;
   font-weight: 700;
-  list-style: none;
 }
-
 
 .container {
   display: flex;
-  align-items: flex-start;
-
-
-}
-
-.container .test {
   flex: 1;
-  padding: 20px;
-  justify-self: center;
 }
 
-.container .img {
-  flex: 1;
-  padding-left: 50px;
+.sidebar {
+  width: 300px;
+  background-color: rgb(58, 57, 57);
+  flex-shrink: 0;
 }
 
-.test ul {
+.media {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
 }
 
-.test ul li {
-  flex: 1;
-  padding: 20px;
+img {
+  width: auto;
+  height: 250px;
+
 }
 
 .footer {
-  background-color: #2d3033;
-  display: flex;
+  background-color: rgb(117, 57, 9);
+  text-align: center;
+  color: rgb(129, 31, 31);
+  font-weight: bold;
+  -webkit-text-stroke: 2px #000;
+  font-size: 40px;
 
 }
+
 
 
 
